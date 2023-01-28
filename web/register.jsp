@@ -9,37 +9,37 @@
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/register.css">
 </head>
 <body>
 <div class="box">
-  <h2>Login</h2>
-  <form action="login" method="post" id="loginForm">
+  <h2>Register</h2>
+  <form action="register" method="post" id="registerForm">
     <div class="input-box">
       <label>账号</label>
-      <input type="text" name="rname" id="rname" value="">
-      <span id="rnameSpan" style="margin-top: 5px; padding: 5px; color: rgba(225, 50, 58, 1.0); font-size: 13px">
-
+      <input type="text" name="rname" id="rname" value="${messageModel.object.userName}">
+      <span id="rnameSpan">
+        ${messageModel.rnameMsg}
       </span>
     </div>
     <div class="input-box">
       <label>密码</label>
-      <input type="password" name="rpwd" id="rpwd" value="">
-      <span id="rpwdSpan" style="margin-top: 5px; padding: 5px; color: rgba(225, 50, 58, 1.0); font-size: 13px">
-
+      <input type="password" name="rpwd" id="rpwd" value="${messageModel.object.userPwd}">
+      <span id="rpwdSpan">
+        ${messageModel.rpwdMsg}
       </span>
     </div>
     <div class="input-box">
       <label>确认密码</label>
-      <input type="password" name="rspwd" id="rspwd" value="">
-      <span id="rspwdSpan" style="margin-top: 5px; padding: 5px; color: rgba(225, 50, 58, 1.0); font-size: 13px">
-
+      <input type="password" name="rspwd" id="rspwd" value="${messageModel.object.userSpwd}">
+      <span id="rspwdSpan">
+        ${messageModel.rspwdMsg}
       </span>
     </div>
   </form>
   <div class="btn-box">
-<%--    <a href="#">忘记密码?</a>--%>
-    <div>
+    <a href="login.jsp">返回登录</a>
+    <div style="margin:20px auto">
 <%--      <button type="button" id="loginBtn">登录</button>--%>
       <button type="button" id="regBtn">注册</button>
     </div>
@@ -47,7 +47,8 @@
 </div>
 </body>
 
-<script type="text/javascript" src="./js/jquery-3.6.3.js"></script>
-<script type="text/javascript" src="./js/login_demo.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.3.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
 
 </html>

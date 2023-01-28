@@ -1,7 +1,7 @@
 package com.web_demo.entity.vo;
 
 /**
- * 消息模型对象（数据响应）
+ * 登录消息模型对象（数据响应）
  *      状态码
  *          1=成功，0=失败
  *      提示信息
@@ -10,7 +10,7 @@ package com.web_demo.entity.vo;
  *          object对象
  *
  */
-public class MessageModel {
+public class LoginMessageModel {
     private Integer code = 1; // 状态码 (1=成功，0=失败)
     private String msg; // 提示信息
     private Object object; // 回显对象 (基本数据类型，字符串类型，List，Map等)

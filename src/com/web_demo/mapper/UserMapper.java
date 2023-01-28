@@ -7,4 +7,5 @@ import com.web_demo.entity.User;
  */
 public interface UserMapper {
     public User queryUserByName(String userName);
+    public Integer insertUser(User user);
 }

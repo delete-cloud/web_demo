@@ -10,4 +10,9 @@
         from tb_user
         where userName = #{userName}
     </select>
+
+    <insert id="insertUser" parameterType="com.web_demo.entity.User">/* useGeneratedKeys="true" keyProperty="userId">*/
+        insert into tb_user(userName, userPwd)
+        values (#{userName}, #{userPwd})
+    </insert>
 </mapper>

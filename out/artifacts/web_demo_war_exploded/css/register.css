@@ -81,18 +81,18 @@ body {
     align-items: flex-start;
 }
 
-/*.box .btn-box > a {*/
-/*    font-size: 14px;*/
-/*    text-decoration: none;*/
-/*    color: rgba(255, 255, 255, 0.8);*/
-/*    transition: 0.2s;*/
-/*    width: 250px;*/
-/*    text-align: end;*/
-/*}*/
+.box .btn-box > a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s;
+    width: 250px;
+    text-align: end;
+}
 
-/*.box .btn-box > a:hover {*/
-/*    color: rgba(255, 255, 255, 1);*/
-/*}*/
+.box .btn-box > a:hover {
+    color: rgba(255, 255, 255, 1);
+}
 
 .box .btn-box > div {
     display: flex;

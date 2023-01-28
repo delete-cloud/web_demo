@@ -4,10 +4,20 @@ package com.web_demo.entity;
  * 用户实体类
  */
 public class User {
-    private Integer userId;//用户ID
-    private String userName;//用户名
-    private String userPwd;//用户密码
-    private Integer userAge;//用户年龄
+    private Integer userId;// 用户ID
+    private String userName;// 用户名
+    private String userPwd;// 用户密码
+    private Integer userAge = 18;// 用户年龄
+
+    private String userSpwd;// 用户确认密码（注册时使用）
+
+    public String getUserSpwd() {
+        return userSpwd;
+    }
+
+    public void setUserSpwd(String userSpwd) {
+        this.userSpwd = userSpwd;
+    }
 
     public Integer getUserId() {
         return userId;
