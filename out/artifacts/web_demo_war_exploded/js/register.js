@@ -1,4 +1,4 @@
-$("#regBtn").click(function (){
+$("#regBtn").click(() => {
     let rname = $("#rname").val();
     let rpwd = $("#rpwd").val();
     let rspwd = $("#rspwd").val();

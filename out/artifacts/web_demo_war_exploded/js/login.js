@@ -1,4 +1,4 @@
-$("#loginBtn").click(function () {
+$("#loginBtn").click(() => {
     //获取用户名和密码
     let uname = $("#uname").val();
     let upwd = $("#upwd").val();
